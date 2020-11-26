@@ -9,7 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.Collection;
 
-@RestController
+@RestController()
+@CrossOrigin(origins = "http://localhost:4200")
 public class AlbumController {
 
     private AlbumRepository dao;

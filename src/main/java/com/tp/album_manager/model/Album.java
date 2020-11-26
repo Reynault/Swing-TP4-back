@@ -13,21 +13,17 @@ public class Album {
     private String editor;
     private float price;
     private int nbEx;
+    private String author;
 
-//    @ElementCollection
-//    private List<String> authors;
-
-    public Album( String title, String editor, float price, int nbEx) {
+    public Album( String title, String editor, String author, float price, int nbEx) {
         this.title = title;
         this.editor = editor;
-//        this.authors = authors;
+        this.author = author;
         this.price = price;
         this.nbEx = nbEx;
     }
 
-    protected Album() {
-
-    }
+    protected Album() { }
 
     public String getTitle() {
         return title;
@@ -45,13 +41,13 @@ public class Album {
         this.editor = editor;
     }
 
-//    public List<String> getAuthors() {
-//        return authors;
-//    }
-//
-//    public void setAuthors(List<String> authors) {
-//        this.authors = authors;
-//    }
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
 
     public float getPrice() {
         return price;
@@ -85,7 +81,7 @@ public class Album {
                 ", editor='" + editor + '\'' +
                 ", price=" + price +
                 ", nbEx=" + nbEx +
-//                ", authors=" + authors +
+                ", author='" + author + '\'' +
                 '}';
     }
 }

@@ -26,18 +26,21 @@ public class AlbumManagerApplication {
             albumRepository.save(new Album(
                     "An Awesome Wave",
                     "Iguana Studio",
+                    "Alt J",
                     19.99f,
                     40
             ));
             albumRepository.save(new Album(
                     "The Golden Age",
                     "Green United Music",
+                    "Woodkid",
                     24.99f,
                     200
             ));
             albumRepository.save(new Album(
                     "Myopia",
                     "Strange Harvest Limited",
+                    "Agnes Obel",
                     1999.99f,
                     2
             ));
